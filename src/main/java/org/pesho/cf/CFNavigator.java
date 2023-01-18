@@ -1,14 +1,8 @@
 package org.pesho.cf;
 
-import java.time.Duration;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CFNavigator {
 
@@ -18,7 +12,7 @@ public class CFNavigator {
         System.setProperty("webdriver.chrome.driver", driverPath);  
 		
 		ChromeOptions options = new ChromeOptions();
-//		options.setHeadless(true);
+		options.setHeadless(true);
 		driver = new ChromeDriver(options);
 	}
 
